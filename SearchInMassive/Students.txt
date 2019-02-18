@@ -1,0 +1,7 @@
+0 0001 Guru 5
+1 0002 Fyt 5
+2 0032 Dewq 3
+3 0500 Poj 3
+4 0007 Mike 4
+5 0087 Jane 2
+6 0100 Sally 4
