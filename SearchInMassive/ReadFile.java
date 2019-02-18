@@ -5,7 +5,7 @@ import java.io.IOException;
 public class ReadFile{
 
     public void read(Array a) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Ivan\\IdeaProjects\\Practica_siaod\\src\\Practice1\\Students"));
+        BufferedReader reader = new BufferedReader(new FileReader("Students.txt"));
         String line;
         while ((line=reader.readLine()) != null){
             String[] parts = line.split(" ",4);
