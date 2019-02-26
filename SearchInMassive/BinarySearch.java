@@ -1,3 +1,4 @@
+
 public class BinarySearch {
     private final int NUM=7;
     public int search(Student arrayStudents[], int id) {
@@ -13,10 +14,6 @@ public class BinarySearch {
                 }
             }
         }
-        for (int i = 0; i < NUM; i++) {
-            System.out.println(array[i].getId()+".");
-        }
-
         int nX = -1;
         int L = 0;
         int R = NUM - 1;
@@ -26,17 +23,16 @@ public class BinarySearch {
                 nX = k;
                 break;
             }
-            else if (array[k].getId() < id) {
-                R = k - 1;
+            if (array[k].getId() < id) {
+                L = k + 1;
             }
             else if (array[k].getId() > id) {
-                L = k + 1;
+                R = k - 1;
             }
         }
 
         if (nX == -1)
             return -1;
-        System.out.println(("llll"));
         for (int i = 0; i < NUM; i++)
             if (arrayStudents[i]==array[nX])
                 return i;
