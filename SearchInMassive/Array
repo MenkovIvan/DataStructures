@@ -1,4 +1,3 @@
-
 public class Array {
     private final int NUM =15;
     private Student arrayStudents[] = new Student[NUM];
@@ -34,10 +33,6 @@ public class Array {
                 }
                 break;
             }
-            case 3:{
-
-                break;
-            }
             case 4:{
                 BinarySearch bn = new BinarySearch();
                 int indexSearch = bn.search(arrayStudents,id);
@@ -49,11 +44,13 @@ public class Array {
                 break;
             }
             case 5:{
-
-                break;
-            }
-            case 6:{
-
+                BinarySearchGold bng = new BinarySearchGold();
+                int indexSearch = bng.search(arrayStudents,id);
+                if (indexSearch==-1){
+                    Output out = new Output(id);
+                }else{
+                    Output out = new Output(id,indexSearch,arrayStudents);
+                }
                 break;
             }
         }
